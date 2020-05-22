@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+      - id: black
+        language_version: python3.7
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.5.0
+    hooks:
+      - id: flake8
+      - id: trailing-whitespace
+      - id: detect-private-key
+      - id: detect-aws-credentials
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v0.13.0
+    hooks:
+    -   id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: .*/tests/.*
+  - repo: git@git.appannie.org:appannie/pre-commit-hooks.git
+    rev: 1.2.6
+    hooks:
+      - id: copyright
+
+exclude: (docs/|examples/|tests/|setup.py|Pipfile*)
