@@ -9,16 +9,18 @@ on:
       - '*'
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
 
+    - name: checkout scm
+      uses: actions/checkout@v2
     - name: Build Docker image
       run: make build
-
-    - name: init pipenv
-      run: pip install pipenv wheel&& pipenv install --dev
-
-    - uses: cclauss/GitHub-Action-for-pytest@0.5.0
+    - name: setup pipenv
+      uses: dschep/install-pipenv-action@v1
+    - name: install virtualenv
+      run: pipenv install --dev
+    - name: run tests
+      run: pipenv run make test
 
