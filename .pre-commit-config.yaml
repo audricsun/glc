@@ -31,10 +31,6 @@ repos:
     -   id: check-json
     -   id: debug-statements
     -   id: end-of-file-fixer
-    -   id: name-tests-test
-        exclude: tests/(integration/testcases\.py|helpers\.py)
-    -   id: requirements-txt-fixer
-    -   id: trailing-whitespace
 -   repo: https://github.com/Yelp/detect-secrets
     rev: v0.13.1
     hooks:
