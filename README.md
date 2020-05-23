@@ -4,7 +4,6 @@
 I am running administrator role for my teams, and it's time wasting to browse and click for create/update roles/projects or setup webhooks/intetgrations for Gitlab projects. Though there are few choices but none of them seems handy enough for me. Let's see if I can make a better one on my own.
 
 > This whole project is built based on the Gitlab administration practice from my work. Not sure if this is a good practice, but it works for my place. 
-{.blue}
 
 # Roadmap
 1. [ ] Cli structure
