@@ -1,5 +1,5 @@
 # gli - Simple GitLab Command line interface(Draft)
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=evinoca_MyCli&metric=alert_status)](https://sonarcloud.io/dashboard?id=evinoca_MyCli) [![Coverage Status](https://coveralls.io/repos/github/evinoca/gli/badge.svg?branch=master)](https://coveralls.io/github/evinoca/gli?branch=master)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=evinoca_MyCli&metric=alert_status)](https://sonarcloud.io/dashboard?id=evinoca_MyCli) [![Coverage Status](https://coveralls.io/repos/github/evinoca/gli/badge.svg?branch=master)](https://coveralls.io/github/evinoca/gli?branch=master)[![Readthedoc](https://readthedocs.org/projects/gli/badge/?version=latest)](https://readthedocs.org/projects/gli/badge/?version=latest)
 
 I am running administrator role for my teams, and it's time wasting to browse and click for create/update roles/projects or setup webhooks/intetgrations for Gitlab projects. Though there are few choices but none of them seems handy enough for me. Let's see if I can make a better one on my own.
 
