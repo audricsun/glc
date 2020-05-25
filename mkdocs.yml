@@ -1,0 +1,21 @@
+site_name: Document for gli
+nav:
+  - Home: index.md
+  - 'Basic Concept': concept.md
+  - 'User Guides':
+      - 'Quick Start' : user-guide/quickstart.md
+      - 'Configurations' : user-guide/configuration.md
+  - 'Change log': changelog.md
+  - About: about.md
+theme:
+  name: readthedocs
+  nav_style: dark
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - rust
+  shortcuts:
+          help: 191    # ?
+          next: 78     # n
+          previous: 80 # p
+          search: 83   # s
