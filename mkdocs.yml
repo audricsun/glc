@@ -4,8 +4,14 @@ nav:
   - 'Basic Concept': concept.md
   - 'User Guides':
       - 'Quick Start' : user-guide/quickstart.md
-      - 'Configurations' : user-guide/configuration.md
-  - 'Change log': changelog.md
+      - 'Config Files' : user-guide/confgfiles.md
+      - 'Repository' : user-guide/repository.md
+      - 'Group/User' : user-guide/users.md
+      - 'Bulk Changes' : user-guide/bulk_update.md
+      - 'Templates' : user-guide/templates.md
+  - "References":
+    - 'Developing': develop.md
+    - 'Change log': changelog.md
   - About: about.md
 theme:
   name: readthedocs
@@ -13,7 +19,6 @@ theme:
   highlightjs: true
   hljs_languages:
     - yaml
-    - rust
   shortcuts:
           help: 191    # ?
           next: 78     # n
