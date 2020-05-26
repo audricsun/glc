@@ -37,9 +37,7 @@ class Gitlab(wrapper_base):
     def projects(self, **kwargs):
         host = self.attr.get("host")
         rsp = requests.get(
-            f"{host}/api/v4/projects",
-            headers={"PRIVATE-TOKEN": "ubYeVdstkPkqFQ1uX2-2"},
-            params=kwargs,
+            f"{host}/api/v4/projects", headers={"PRIVATE-TOKEN": ""}, params=kwargs,
         )
         print(json.dumps(rsp.json(), indent=4))
         return [Project(**project) for project in rsp.json()]
