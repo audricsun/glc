@@ -8,11 +8,12 @@ pytest = "*"
 pytest-cov = "*"
 mkdocs = "*"
 tox = "*"
+tox-pipenv = "*"
 
 [packages]
 requests = "*"
 click = "*"
-tox-pipenv = "*"
+
 
 [requires]
 python_version = "3.7"

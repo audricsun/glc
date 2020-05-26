@@ -12,7 +12,7 @@
 ### Gitlab
 1. [ ] Support GraphQL
 
-### Distribution
+### Continuous Integration/Delivery
 1. [ ] Integration with Tox, support CI for multiple python distribution.
-2. [ ] Deliver to Dockerhub.
+2. [ ] Deliver to Dockerhub with MultiStage Image
 3. [ ] Compile with Nuitka, release with binaries.
