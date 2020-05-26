@@ -7,10 +7,13 @@ verify_ssl = true
 pytest = "*"
 pytest-cov = "*"
 mkdocs = "*"
+tox = "*"
+tox-pipenv = "*"
 
 [packages]
 requests = "*"
 click = "*"
+
 
 [requires]
 python_version = "3.7"

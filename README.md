@@ -1,13 +1,49 @@
-# gli - Simple GitLab Command line interface(Draft)
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=evinoca_MyCli&metric=alert_status)](https://sonarcloud.io/dashboard?id=evinoca_MyCli) [![Coverage Status](https://coveralls.io/repos/github/evinoca/gli/badge.svg?branch=master)](https://coveralls.io/github/evinoca/gli?branch=master) [![Readthedoc](https://readthedocs.org/projects/gli/badge/?version=latest)](https://gli.readthedocs.io/en/latest/)
+# Welcome to Document of gli
+Gli (Gitlab Cli) is a wrapper based on python-click and Gitlab HTTP API v4.
+It's aim to provide a centralized configuration file to archive/backup/restore settings of Gitlab.
 
+[![Actions Status](https://github.com/evinoca/gli/workflows/CI/badge.svg)](https://github.com/evinoca/gli/actions?query=workflow%3ACI) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=evinoca_MyCli&metric=alert_status)](https://sonarcloud.io/dashboard?id=evinoca_MyCli) [![Coverage Status](https://coveralls.io/repos/github/evinoca/gli/badge.svg?branch=master)](https://coveralls.io/github/evinoca/gli?branch=master) [![Readthedoc](https://readthedocs.org/projects/gli/badge/?version=latest)](https://gli.readthedocs.io/en/latest/)
+
+## Background
 I am running administrator role for my teams, and it's time wasting to browse and click for create/update roles/projects or setup webhooks/intetgrations for Gitlab projects. Though there are few choices but none of them seems handy enough for me. Let's see if I can make a better one on my own.
 
-> This whole project is built based on the Gitlab administration practice from my work. Not sure if this is a good practice, but it works for my place.
+> The whole project is built based on the Gitlab administration practice from my work.
 
-# Roadmap
-1. [ ] Multi-level commands/sub-commands design
-2. [ ] Configuration management
-3. [ ] API wrapper for Gitlab
-4. [ ] First Demo for create conf from remote over `gli fetch`
-5. [ ] When all above are done. Then i will think about it.
+## Reference
+1. [Document](https://gli.readthedocs.io/en/latest/)
+
+## Installation
+
+
+### Pip/Pipx
+```
+gli init --host https://git.company.com --token=xxxx
+Do you want to create configuration files at /usr/username/.gli/git.company.com Y/n ? Yes
+Creating configuration file...
+Authentication...
+Fetching namespaces...
+Fetch project list...
+Fetching user list...
+Fetching group list...
+Done!
+```
+
+### Docker
+TBD
+
+### Curl(TBD)
+TBD
+
+### Homebrew(TBD)
+TBD
+
+## Quick-Start
+
+### Initial Configuration
+TBD
+
+### Profile/Credentials
+TBD
+
+### Sync-Up
+TBD

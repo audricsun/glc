@@ -1,2 +1,1 @@
-# Welcome to Document of gli
-
+../README.md
