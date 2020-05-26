@@ -1,4 +1,4 @@
-name: Basic Tests
+name: CI
 
 on:
   push:
@@ -23,4 +23,3 @@ jobs:
       run: pipenv install --dev
     - name: run tests
       run: pipenv run make test
-
