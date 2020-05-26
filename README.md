@@ -9,6 +9,9 @@ I am running administrator role for my teams, and it's time wasting to browse an
 
 > The whole project is built based on the Gitlab administration practice from my work.
 
+## Reference
+1. [Document](https://gli.readthedocs.io/en/latest/)
+
 ## Installation
 
 
