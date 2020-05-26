@@ -1,18 +1,19 @@
 site_name: Document for gli
 nav:
-  - Home: index.md
-  - 'Basic Concept': concept.md
+  - 'Basic':
+    - 'Home' : index.md
+    - 'Changelog': changelog.md
+    - 'Roadmap': roadmap.md
   - 'User Guides':
-      - 'Quick Start' : user-guide/quickstart.md
       - 'Config Files' : user-guide/confgfiles.md
       - 'Repository' : user-guide/repository.md
       - 'Group/User' : user-guide/users.md
-      - 'Bulk Changes' : user-guide/bulk_update.md
+      - 'Bulk Changes' : user-guide/bulk.md
       - 'Templates' : user-guide/templates.md
   - "References":
     - 'Developing': develop.md
-    - 'Change log': changelog.md
-  - About: about.md
+  - Other:
+    - 'About': about.md
 theme:
   name: readthedocs
   nav_style: dark
