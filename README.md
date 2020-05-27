@@ -9,41 +9,38 @@ I am running administrator role for my teams, and it's time wasting to browse an
 
 > The whole project is built based on the Gitlab administration practice from my work.
 
-## Reference
-1. [Document](https://gli.readthedocs.io/en/latest/)
 
 ## Installation
 
 
 ### Pip/Pipx
 ```
-gli init --host https://git.company.com --token=xxxx
-Do you want to create configuration files at /usr/username/.gli/git.company.com Y/n ? Yes
-Creating configuration file...
-Authentication...
-Fetching namespaces...
-Fetch project list...
-Fetching user list...
-Fetching group list...
-Done!
+TBD
 ```
 
 ### Docker
+```
 TBD
+```
 
 ### Curl(TBD)
+```
 TBD
+```
 
 ### Homebrew(TBD)
+```
 TBD
+```
 
 ## Quick-Start
-
-### Initial Configuration
+```
 TBD
+```
 
-### Profile/Credentials
-TBD
+## Contribute
+Wherever there is any issue or suggestions, please file them [here](https://github.com/evinoca/gli/issues)
 
-### Sync-Up
-TBD
+
+## Reference
+For more detail, please check [Document](https://gli.readthedocs.io/en/latest/)

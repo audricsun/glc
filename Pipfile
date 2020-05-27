@@ -4,16 +4,22 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "*"
-pytest-cov = "*"
 mkdocs = "*"
 tox = "*"
 tox-pipenv = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-flake8 = "*"
+pytest-sugar = "*"
+pytest-mock = "*"
+pytest-watch = "*"
+coveralls = "*"
 
 [packages]
 requests = "*"
 click = "*"
-
+colorama = "*"
+rich = "*"
 
 [requires]
 python_version = "3.7"
