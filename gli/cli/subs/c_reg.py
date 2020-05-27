@@ -8,7 +8,7 @@ import click
 @click.pass_obj
 def cli(config):
     """
-    Management for repository.
+    Management for Registry.
     """
     click.echo("calling sub cmd repo")
 

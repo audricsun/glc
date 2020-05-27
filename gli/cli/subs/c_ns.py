@@ -4,8 +4,10 @@ from __future__ import unicode_literals
 import click
 
 
-@click.command("user", short_help="Get/List/Update user and groups.")
+@click.command("user", short_help="Namespace management.")
 @click.pass_obj
 def cli(config):
-    """Shows file changes in the current working directory."""
+    """
+    Management gitlab namespaces.
+    """
     click.entry("Calling sub user")
