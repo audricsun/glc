@@ -1,9 +1,12 @@
 from __future__ import absolute_import
 from __future__ import unicode_literals
 
-import click
+import time
 
-from gli.config.conf import GitlabConfigFile
+import click
+from rich.progress import track
+
+from glc.config.conf import GitlabConfigFile
 
 
 @click.group()
@@ -27,6 +30,9 @@ def init(config):
     file = GitlabConfigFile(config.config)
     if not file.exist and click.confirm("Do you want to create one?"):
         file.init()
+        for step in track(range(100), description="Fetching Remote..."):
+            time.sleep(0.1)
+    click.echo(click.style("Done", fg="green"))
 
 
 @cli.command("ls", short_help="List configuration files.")

@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 import os
 
-# from gli.utils.error import GitlabConfigNotExistError
+# from glc.utils.error import GitlabConfigNotExistError
 
 
 class BaseConfigSection(object):
