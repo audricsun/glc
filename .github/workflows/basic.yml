@@ -23,3 +23,5 @@ jobs:
       run: pipenv install --dev
     - name: run tests
       run: pipenv run make test
+    - name: coveralls
+      run: pipenv run coveralls

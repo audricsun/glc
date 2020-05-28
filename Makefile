@@ -8,11 +8,7 @@ build:
 	 docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .
 
 test:
-	python -m py.test \
-		--junit-xml=reports.xml \
-		--cov-report term-missing \
-		--cov-report xml:coverage.xml \
-		--cov=gli
+	python -m py.test
 
 testd:
 	docker run -v $${pwd}:. ${IMAGE_NAME}:${IMAGE_TAG} python -m pytest
@@ -20,3 +16,7 @@ testd:
 testv:
 	pipenv install --dev
 	make test
+
+ptw:
+	# run pytest-watch with pipenv over workspace changes
+	PYTHONPATH=. pipenv run ptw
