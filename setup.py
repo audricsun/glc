@@ -30,24 +30,17 @@ def find_version(*file_paths):
 
 
 install_requires = [
-    'cached-property >= 1.2.0, < 2',
-    'docopt >= 0.6.1, < 1',
-    'PyYAML >= 3.10, < 6',
-    'requests >= 2.20.0, < 3',
-    'texttable >= 0.9.0, < 2',
-    'websocket-client >= 0.32.0, < 1',
-    'distro >= 1.5.0, < 2',
-    'docker[ssh] >= 3.7.0, < 5',
-    'dockerpty >= 0.4.1, < 1',
-    'six >= 1.3.0, < 2',
-    'jsonschema >= 2.5.1, < 4',
-    'python-dotenv >= 0.13.0, < 1',
+    'requests >= 2.20.0,< 3',
+    'click >= 7',
+    'rich >= 1'
 ]
 
 
 tests_require = [
-    'ddt >= 1.2.2, < 2',
-    'pytest < 6',
+    'pytest >= 2.9',
+    'pytest-flake8 >= 1',
+    'pytest-cov',
+    'pytest-mock',
 ]
 
 
@@ -55,13 +48,7 @@ if sys.version_info[:2] < (3, 4):
     tests_require.append('mock >= 1.0.1, < 4')
 
 extras_require = {
-    ':python_version < "3.2"': ['subprocess32 >= 3.5.4, < 4'],
-    ':python_version < "3.4"': ['enum34 >= 1.0.4, < 2'],
-    ':python_version < "3.5"': ['backports.ssl_match_hostname >= 3.5, < 4'],
-    ':python_version < "3.3"': ['backports.shutil_get_terminal_size == 1.0.0',
-                                'ipaddress >= 1.0.16, < 2'],
     ':sys_platform == "win32"': ['colorama >= 0.4, < 1'],
-    'socks': ['PySocks >= 1.5.6, != 1.5.7, < 2'],
     'tests': tests_require,
 }
 
@@ -80,17 +67,17 @@ except Exception as e:
 
 
 setup(
-    name='gli',
-    version=find_version("gli", "__init__.py"),
+    name='glc',
+    version=find_version("glc", "__init__.py"),
     description='GitLab command line interface',
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
-    url='https://github.com/evinoca/gli',
+    url='https://github.com/evinoca/glc',
     project_urls={
-        'Documentation': 'https://github.com/evinoca/gli',
-        'Changelog': 'https://github.com/evinoca/gli/blob/release/CHANGELOG.md',
-        'Source': 'https://github.com/evinoca/gli',
-        'Tracker': 'https://github.com/evinoca/gli/issues',
+        'Documentation': 'https://gli.readthedocs.io/en/latest/',
+        'Changelog': 'https://github.com/evinoca/glc/blob/release/CHANGELOG.md',
+        'Source': 'https://github.com/evinoca/glc',
+        'Tracker': 'https://github.com/evinoca/glc/issues',
     },
     author='Audric Sun',
     author_email='audric.s@outlook.com',
@@ -100,15 +87,15 @@ setup(
     install_requires=install_requires,
     extras_require=extras_require,
     tests_require=tests_require,
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires='>=3.6',
     entry_points={
-        'console_scripts': ['gli=gli.cli.entry:cli'],
+        'console_scripts': ['glc=glc.cli.entry:cli'],
     },
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 2 - Pre-Alpha',
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.7',
     ],
 )

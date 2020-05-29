@@ -1,46 +1,36 @@
-# Welcome to Document of gli
-Gli (Gitlab Cli) is a wrapper based on python-click and Gitlab HTTP API v4.
-It's aim to provide a centralized configuration file to archive/backup/restore settings of Gitlab.
+# glc
+A command line tool for Gitlab.
+Aim to provide a centralized configuration file to archive/backup/restore Gitlab settings/namespace/groups/users/repositories.
 
-[![Actions Status](https://github.com/evinoca/gli/workflows/CI/badge.svg)](https://github.com/evinoca/gli/actions?query=workflow%3ACI) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=evinoca_MyCli&metric=alert_status)](https://sonarcloud.io/dashboard?id=evinoca_MyCli) [![Coverage Status](https://coveralls.io/repos/github/evinoca/gli/badge.svg?branch=master)](https://coveralls.io/github/evinoca/gli?branch=master) [![Readthedoc](https://readthedocs.org/projects/gli/badge/?version=latest)](https://gli.readthedocs.io/en/latest/)
+[![Actions Status](https://github.com/evinoca/glc/workflows/CI/badge.svg)](https://github.com/evinoca/glc/actions?query=workflow%3ACI) [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=glc&metric=alert_status)](https://sonarcloud.io/dashboard?id=glc) [![Coverage Status](https://coveralls.io/repos/github/evinoca/glc/badge.svg?branch=master)](https://coveralls.io/github/evinoca/glc?branch=master) [![Readthedoc](https://readthedocs.org/projects/gli/badge/?version=latest)](https://gli.readthedocs.io/en/latest/)
 
 ## Background
 I am running administrator role for my teams, and it's time wasting to browse and click for create/update roles/projects or setup webhooks/intetgrations for Gitlab projects. Though there are few choices but none of them seems handy enough for me. Let's see if I can make a better one on my own.
 
-> The whole project is built based on the Gitlab administration practice from my work.
+> **Note: This project is basically only a mix of ideal concepts and still under developing.**
 
 
 ## Installation
 
 
 ### Pip/Pipx
-```
-TBD
-```
-
-### Docker
-```
-TBD
+```bash
+# Install over pip
+pip install --upgrade glc
+# It's even better with pipx
+pipx install glc
 ```
 
-### Curl(TBD)
+## Usage
 ```
-TBD
-```
-
-### Homebrew(TBD)
-```
-TBD
+glc config init
 ```
 
-## Quick-Start
-```
-TBD
-```
+## Developing
+Take a look at [Develop](https://glc.readthedocs.io/en/latest/develop/)
 
 ## Contribute
-Wherever there is any issue or suggestions, please file them [here](https://github.com/evinoca/gli/issues)
-
+Wherever there is any issue or suggestions, feel free to raise issus [here](https://github.com/evinoca/glc/issues).
 
 ## Reference
-For more detail, please check [Document](https://gli.readthedocs.io/en/latest/)
+For more detail, check [Document](https://glc.readthedocs.io/en/latest/).

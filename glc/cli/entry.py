@@ -6,14 +6,14 @@ from os.path import expanduser
 
 import click
 
-from gli import __version__
+from glc import __version__
 
 
 class GlobalConfig:
     def __init__(self, verbose=False, profile=None, config=None):
         self.verbose = verbose
         self.profile = profile
-        self.config = os.path.join(expanduser("~"), ".gli")
+        self.config = os.path.join(expanduser("~"), ".glc")
         if config is not None:
             self.config = config
 
@@ -34,27 +34,27 @@ class ComplexCLI(click.MultiCommand):
 
     def get_command(self, ctx, name):
         try:
-            mod = __import__(f"gli.cli.subs.c_{name}", None, None, ["cli"])
+            mod = __import__(f"glc.cli.subs.c_{name}", None, None, ["cli"])
         except ImportError:
             return
         return mod.cli
 
 
-CONTEXT_SETTINGS = dict(auto_envvar_prefix="GLI")
+CONTEXT_SETTINGS = dict(auto_envvar_prefix="glc")
 
 
 @click.command(cls=ComplexCLI, context_settings=CONTEXT_SETTINGS)
 @click.option(
     "--config",
-    envvar="GLI_CONFIG",
+    envvar="glc_CONFIG",
     type=click.Path(exists=True, file_okay=False, resolve_path=True),
-    help="Directory for Gli configurations.",
+    help="Directory for glc configurations.",
 )
 @click.option(
     "--profile",
     show_default=True,
     default="default",
-    envvar="GLI_PROFILE",
+    envvar="glc_PROFILE",
     help="Profile to interact with Gitlab.",
 )
 @click.option("-v", "--verbose", is_flag=True, help="Enables verbose mode.")
@@ -63,7 +63,7 @@ CONTEXT_SETTINGS = dict(auto_envvar_prefix="GLI")
 def cli(ctx, verbose, profile, config):
     """
     Gitlab Cli.\n
-    gli [--config] {repo,group,user,info,init}
+    glc [--config] {repo,group,user,info,init}
     """
     ctx.obj = GlobalConfig(verbose, profile, config)
 
