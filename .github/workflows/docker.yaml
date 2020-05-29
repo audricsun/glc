@@ -1,4 +1,4 @@
-name: CI
+name: docker
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - '*'
 
 jobs:
-  docker:
+  build-image:
     runs-on: ubuntu-latest
     steps:
     - name: checkout scm

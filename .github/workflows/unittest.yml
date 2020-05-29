@@ -1,4 +1,4 @@
-name: CI
+name: unittest
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - '*'
 
 jobs:
-  unittest:
+  pytest:
     runs-on: ubuntu-latest
     steps:
     - name: checkout scm
