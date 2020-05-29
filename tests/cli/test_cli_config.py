@@ -1,17 +1,21 @@
+from __future__ import absolute_import
+from __future__ import unicode_literals
+
 from click.testing import CliRunner
-from gli.cli.subs.c_config import cli
-from gli.cli.entry import GlobalConfig
+
+from glc.cli.entry import GlobalConfig
+from glc.cli.subs.c_config import cli
 
 
 def test_cli_sub_init_help_option():
     """
     Command:
-    gli init --help
+    glc init --help
     Expect:
     Show help tips for arguments and options
     """
     runner = CliRunner()
-    result = runner.invoke(cli, ['--help'], obj=GlobalConfig(True))
+    result = runner.invoke(cli, ["--help"], obj=GlobalConfig(True))
     assert result.exit_code == 0
 
 

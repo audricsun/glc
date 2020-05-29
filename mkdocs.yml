@@ -1,18 +1,22 @@
-site_name: Document for gli
+site_name: glc
 nav:
-  - 'Basic':
+  - 'Index':
     - 'Home' : index.md
     - 'Changelog': changelog.md
     - 'Roadmap': roadmap.md
   - 'User Guides':
-      - 'Config Files' : user-guide/confgfiles.md
-      - 'Repository' : user-guide/repository.md
-      - 'Group/User' : user-guide/users.md
-      - 'Bulk Changes' : user-guide/bulk.md
-      - 'Templates' : user-guide/templates.md
-  - "References":
-    - 'Developing': develop.md
-  - Other:
+      'Basic Usage':
+        - 'Setup' : guides/config.md
+        - 'Group/User' : guides/users.md
+        - 'Repository' : guides/repository.md
+        - 'Merge Request' : guides/merge.md
+        - 'Registry' : guides/registry.md
+        - 'Snippet' : guides/snippet.md
+      'Advanced Usage':
+        - 'Bulk Update' : guides/bulk.md
+        - 'Templates' : guides/templates.md
+  - Others:
+    - 'Contribute': develop.md
     - 'About': about.md
 theme:
   name: readthedocs

@@ -1,7 +1,7 @@
 .PHONY: test, testd
 .SILENT:
 
-IMAGE_NAME ?= evinoca/gli
+IMAGE_NAME ?= evinoca/glc
 IMAGE_TAG ?= latest
 
 build:
@@ -20,3 +20,9 @@ testv:
 ptw:
 	# run pytest-watch with pipenv over workspace changes
 	PYTHONPATH=. pipenv run ptw
+
+upload:
+	# related packages are installed on host, not included in pipenv
+	rm -rf ./dist/
+	python setup.py sdist bdist_wheel
+	twine upload dist/*

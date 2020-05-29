@@ -18,9 +18,9 @@ def ls():
     click.echo("repo list")
 
 
-@cli.command("add", short_help="create repositories")
-def add():
-    click.echo("repo add")
+@cli.command("create", short_help="Create new repositories")
+def create():
+    click.echo("repo create")
 
 
 @cli.command("update", short_help="update repositories")
@@ -36,17 +36,3 @@ def clone():
 @cli.command("desc", short_help="desc repositories")
 def desc():
     click.echo("repo desc")
-
-
-@cli.group()
-@click.pass_obj
-def reg(config):
-    """
-    Registry of Repository.
-    """
-    pass
-
-
-@reg.command("ls")
-def ls_reg():
-    pass

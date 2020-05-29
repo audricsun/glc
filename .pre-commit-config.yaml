@@ -30,9 +30,15 @@ repos:
     -   id: check-docstring-first
     -   id: check-merge-conflict
     -   id: check-yaml
-    -   id: check-json
+    # -   id: check-json
     -   id: debug-statements
     -   id: end-of-file-fixer
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: ''  # Use the sha / tag you want to point at
+    hooks:
+    -   id: mypy
+        args: [--no-strict-optional, --ignore-missing-imports]
+        additional_dependencies: [tokenize-rt==3.2.0]
 -   repo: https://github.com/Yelp/detect-secrets
     rev: v0.13.1
     hooks:
@@ -40,5 +46,4 @@ repos:
         args:
         - --baseline
         - .secrets.baseline
-        exclude: .*/tests/.*
-exclude: (docs/|examples/|tests/|setup.py|Pipfile*)
+exclude: (docs/|examples/|setup.py|Pipfile*)
