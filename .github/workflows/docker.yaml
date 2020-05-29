@@ -9,7 +9,7 @@ on:
       - '*'
 
 jobs:
-  build-test:
+  docker:
     runs-on: ubuntu-latest
     steps:
     - name: checkout scm
