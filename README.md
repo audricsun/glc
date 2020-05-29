@@ -7,8 +7,8 @@ Aim to provide a centralized configuration file to archive/backup/restore Gitlab
 [![PyPI version](https://badge.fury.io/py/glc.svg)](https://badge.fury.io/py/glc)
 [![PyPI](https://img.shields.io/pypi/pyversions/glc.svg)](https://pypi.org/project/glc/)
 [![Readthedoc](https://readthedocs.org/projects/gli/badge/?version=latest)](https://gli.readthedocs.io/en/latest/)
-![](https://img.shields.io/github/repo-size/evinoca/glc.svg)
-![](https://img.shields.io/docker/pulls/evinoca/glc.svg)
+[![](https://img.shields.io/github/repo-size/evinoca/glc.svg)](https://hub.docker.com/r/evinoca/glc/builds)
+[![](https://img.shields.io/docker/pulls/evinoca/glc.svg)](https://hub.docker.com/r/evinoca/glc)
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/evinoca/glc.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/evinoca/glc/alerts/)
 [![Actions](https://github.com/evinoca/glc/workflows/unittest/badge.svg)](https://github.com/evinoca/glc/actions?query=workflow%3Aunittest)
