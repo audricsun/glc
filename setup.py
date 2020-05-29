@@ -67,14 +67,14 @@ except Exception as e:
 
 
 setup(
-    name='gitlab-cli',
+    name='glc',
     version=find_version("glc", "__init__.py"),
     description='GitLab command line interface',
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
     url='https://github.com/evinoca/glc',
     project_urls={
-        'Documentation': 'https://glc.readthedocs.io/en/latest/',
+        'Documentation': 'https://gli.readthedocs.io/en/latest/',
         'Changelog': 'https://github.com/evinoca/glc/blob/release/CHANGELOG.md',
         'Source': 'https://github.com/evinoca/glc',
         'Tracker': 'https://github.com/evinoca/glc/issues',
@@ -96,6 +96,11 @@ setup(
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3.7',
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: MacOS",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
     ],
 )
