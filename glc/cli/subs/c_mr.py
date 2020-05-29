@@ -8,7 +8,7 @@ import click
 @click.pass_obj
 def cli(config):
     """
-    Snippets.
+    Merge Requests.
     """
     click.echo("calling sub cmd repo")
 
@@ -18,7 +18,7 @@ def ls():
     click.echo("repo list")
 
 
-@cli.command("add", short_help="create MR")
+@cli.command("add", short_help="Create merge request from current repo")
 def add():
     click.echo("repo add")
 
@@ -28,6 +28,6 @@ def update():
     click.echo("repo update")
 
 
-@cli.command("top", short_help="charts for MRs")
-def top():
+@cli.command("status", short_help="Show status repo")
+def status():
     click.echo("repo desc")
