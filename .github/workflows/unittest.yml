@@ -9,14 +9,11 @@ on:
       - '*'
 
 jobs:
-  build-test:
+  unittest:
     runs-on: ubuntu-latest
     steps:
-
     - name: checkout scm
       uses: actions/checkout@v2
-    - name: Build Docker image
-      run: make build
     - name: setup pipenv
       uses: dschep/install-pipenv-action@v1
     - name: install virtualenv
