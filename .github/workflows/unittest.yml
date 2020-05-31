@@ -22,6 +22,8 @@ jobs:
       run: pipenv run make test
     - name: coveralls
       run: pipenv run coveralls
+    - name: check workspace
+      run: ls -al
     - name: SonarCloud Scan
       uses: sonarsource/sonarcloud-github-action@master
       env:
