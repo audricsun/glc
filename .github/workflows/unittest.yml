@@ -23,7 +23,7 @@ jobs:
     - name: coveralls
       run: pipenv run coveralls
     - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@c6493e98f493e1f54273126d263976cb1f5b5723
+      uses: sonarsource/sonarcloud-github-action@633dc16ab5d3b289bd6ca4399587a9832b325f2d
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
